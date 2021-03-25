@@ -18,9 +18,15 @@ __df.isnull().sum())__
 *df.isnull().sum())__
 
 ```
+df.unique()d
+
 <p>df.dropna()
+  
   <br>df.dropna()
+  
   <br> SELECT * FROM table LIMIT == df.head(7)
+  
+  <br> SELEC name FROM table == df.[['name']]
  
 
 </p>
