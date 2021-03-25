@@ -72,7 +72,20 @@ A
 x	3
 y	2
 
+<br> SELECT Sex, AVG(age), COUNT (*) FROM table GROUPBY 1 ==> df.groupby('C').agg({'B':np.mean, 'A':np.size})
 
+A	B	C
+0	x	1	a
+1	x	2	c
+2	x	3	c
+3	y	4	b
+4	y	5	b
+
+	B	A
+C		
+a	1.0	1
+b	4.5	2
+c	2.5	2
   
   `12:31
   
