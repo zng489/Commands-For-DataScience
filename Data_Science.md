@@ -118,6 +118,7 @@ c	2.5	2
 
 
 ```
+
 https://medium.com/jbennetcodes/how-to-rewrite-your-sql-queries-in-pandas-and-more-149d341fc53e
 
 * SELECT, WHERE, DISTINCT, LIMIT
@@ -134,9 +135,16 @@ https://medium.com/jbennetcodes/how-to-rewrite-your-sql-queries-in-pandas-and-mo
 * SELECT with multiple conditions
 * We join multiple conditions with an &. If we only want a subset of columns from the table, that subset is applied in another pair of square brackets.
 
+
 |                                                  SQL                                                 |                                                       Pandas                                                       |
 |:----------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------:|
 | select * from airports where iso_region = 'US-CA' and type = 'seaplane_base'                         | airports[(airports.iso_region == 'US-CA') & (airports.type == 'seaplane_base')]                                    |
 | select ident, name, municipality from airports where iso_region = 'US-CA' and type = 'large_airport' | airports[(airports.iso_region == 'US-CA') & (airports.type == 'large_airport')][['ident', 'name', 'municipality']] 
 
+* ORDER BY
+* By default, Pandas will sort things in ascending order. To reverse that, provide ascending=False.
 
+|                                     SQL                                    |                                          Pandas                                         |
+|:--------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------:|
+| select * from airport_freq where airport_ident = 'KLAX' order by type      | airport_freq[airport_freq.airport_ident == 'KLAX'].sort_values('type')                  |
+| select * from airport_freq where airport_ident = 'KLAX' order by type desc | airport_freq[airport_freq.airport_ident == 'KLAX'].sort_values('type', ascending=False) |
