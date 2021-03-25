@@ -118,6 +118,11 @@ c	2.5	2
 
 
 ```
+
+* SELECT, WHERE, DISTINCT, LIMIT
+* Here are some SELECT statements. 
+* We truncate results with LIMIT, and filter them with WHERE. We use DISTINCT to remove duplicated results.
+
 |                      SQL                     |                 Pandas                |
 |:--------------------------------------------:|:-------------------------------------:|
 | select * from airports                       | airports                              |
