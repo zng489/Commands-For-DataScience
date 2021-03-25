@@ -22,11 +22,25 @@ df.unique()d
 
 ```
 <p>df.dropna()
+
   <br>df.dropna()
+  
   <br> SELECT * FROM table LIMIT ==> df.head(7)
+  
   <br> SELEC name FROM table ==> df[['name']]
+  
   <br> SELECT * FROM table WHERE Pclass = 3 ==> df[df['Pclass'] == 3]
+  
   <br> SELECT * FROM table WHERE Pclass = 3 and sex = 'male' ==> df[(df['Pclass'] == 3) & (df['Sex'] == 'male')]
+  
+  <br> SELECT * FROM table WHERE Pclass = 3 OR sex = 'male' ==> df[(df['Pclass'] == 3) & (df['Sex'] == 'male')]
+  
+  <br> SELECT * FROM table ORDER BY Pclass ==> df.sort_values(by='Pclass', ascending=False)
+  
+  <br> SELECT Pclass, COUNT (*) FROM table GROUP BY 1 ==> df.groupby('Pclass').count()
+  
+  <br> SELECT COUNT (*) FROM table ==> df.groupby('Pclass').size()
+  
  
 </p>
 ```
