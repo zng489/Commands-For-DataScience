@@ -58,17 +58,24 @@ df.unique()d
   
   <br> SELECT COUNT (*) FROM table ==> df[['Pclass', 'PassengerId']].groupby('Pclass').count()
   
-  `12:31
-  
-  https://pandas.pydata.org/docs/getting_started/comparison/comparison_with_sql.html
-  
-  
-A	B
+  A	B
 0	x	a
 1	x	c
 2	x	c
 3	y	b
 4	y	b
- 
-</p>
+
+df[['A', 'B']].groupby('A').count()
+
+  B
+A	
+x	3
+y	2
+
+
+  
+  `12:31
+  
+  https://pandas.pydata.org/docs/getting_started/comparison/comparison_with_sql.html
+
 ```
