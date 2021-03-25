@@ -45,6 +45,15 @@ df.unique()d
   
   `12:31
   
+  https://pandas.pydata.org/docs/getting_started/comparison/comparison_with_sql.html
+  
+  
+A	B
+0	x	a
+1	x	c
+2	x	c
+3	y	b
+4	y	b
  
 </p>
 ```
