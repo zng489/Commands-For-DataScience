@@ -130,3 +130,13 @@ https://medium.com/jbennetcodes/how-to-rewrite-your-sql-queries-in-pandas-and-mo
 | select * from airports limit 3               | airports.head(3)                      |
 | select id from airports where ident = 'KLAX' | airports[airports.ident == 'KLAX'].id |
 | select distinct type from airport            | airports.type.unique()                |
+
+* SELECT with multiple conditions
+* We join multiple conditions with an &. If we only want a subset of columns from the table, that subset is applied in another pair of square brackets.
+
+|                                                  SQL                                                 |                                                       Pandas                                                       |
+|:----------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------:|
+| select * from airports where iso_region = 'US-CA' and type = 'seaplane_base'                         | airports[(airports.iso_region == 'US-CA') & (airports.type == 'seaplane_base')]                                    |
+| select ident, name, municipality from airports where iso_region = 'US-CA' and type = 'large_airport' | airports[(airports.iso_region == 'US-CA') & (airports.type == 'large_airport')][['ident', 'name', 'municipality']] 
+
+
