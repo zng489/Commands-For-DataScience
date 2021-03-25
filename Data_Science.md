@@ -118,6 +118,7 @@ c	2.5	2
 
 
 ```
+https://medium.com/jbennetcodes/how-to-rewrite-your-sql-queries-in-pandas-and-more-149d341fc53e
 
 * SELECT, WHERE, DISTINCT, LIMIT
 * Here are some SELECT statements. 
