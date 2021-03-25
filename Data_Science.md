@@ -106,5 +106,21 @@ c	2.5	2
   `12:31
   
   https://pandas.pydata.org/docs/getting_started/comparison/comparison_with_sql.html
+  
+  
+  
+|                      SQL                     |                 Pandas                |
+|:--------------------------------------------:|:-------------------------------------:|
+| select * from airports                       | airports                              |
+| select * from airports limit 3               | airports.head(3)                      |
+| select id from airports where ident = 'KLAX' | airports[airports.ident == 'KLAX'].id |
+| select distinct type from airport            | airports.type.unique()                |
+
 
 ```
+|                      SQL                     |                 Pandas                |
+|:--------------------------------------------:|:-------------------------------------:|
+| select * from airports                       | airports                              |
+| select * from airports limit 3               | airports.head(3)                      |
+| select id from airports where ident = 'KLAX' | airports[airports.ident == 'KLAX'].id |
+| select distinct type from airport            | airports.type.unique()                |
