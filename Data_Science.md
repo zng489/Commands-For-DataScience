@@ -43,6 +43,8 @@ df.unique()d
   
   <br> SELECT COUNT (*) FROM table ==> df[['Pclass', 'PassengerId']].groupby('Pclass').count()
   
+  `12:31
+  
  
 </p>
 ```
