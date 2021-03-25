@@ -41,6 +41,8 @@ df.unique()d
   
   <br> SELECT COUNT (*) FROM table ==> df.groupby('Pclass').size()
   
+  <br> SELECT COUNT (*) FROM table ==> df[['Pclass', 'PassengerId']].groupby('Pclass').count()
+  
  
 </p>
 ```
