@@ -41,6 +41,15 @@ df.unique()d
   
   <br> SELECT COUNT (*) FROM table ==> df.groupby('Pclass').size()
   
+| Tables        | A | B |
+| ------------- |:-:|:-:|
+| col 3 is      | x |   |
+| col 2 is      | ce|   |
+| zebra stripes | a |   |
+  
+  
+  
+  
     A	B
   0	x	a
   1	x	c
@@ -86,6 +95,13 @@ C
 a	1.0	1
 b	4.5	2
 c	2.5	2
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
   
   `12:31
   
